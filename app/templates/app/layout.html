@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Wake me Up! 😪</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    </head>   
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#signin">Sign In</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                </ul>
+            </nav>
+        </header>        
+
+        {% load static %}
+        <div class="video-bg">
+            <video playsinline autoplay muted loop>
+                <source src="{% static 'asd.mp4'%}" type="video/mp4">
+            </video>
+        </div>        
+        {% block body %}
+        {% endblock %}
+        <div style="padding-bottom: 500px"></div>
+        
+        <footer>
+            <div class="about">
+                <h3>Group Members</h3>
+                    <div>M. Afaq Ali Saqib</div>
+                    <div>M. Awais Ahmad</div>
+                    <div>Ghulam Mujtaba</div>
+                    <div>Talha Mumtaz</div>
+            </div>
+            <div class="contact">
+                <h3>Contact Us</h3>
+                <p>email: talhamumtaz@gmail.com</p>
+                <p>address: Jinnah Company, Rawalpindi</p>
+            </div>
+        </footer>
+    </body>
+    
+</html>

@@ -1,0 +1,24 @@
+{% extends 'app/layout.html' %}
+
+{% block body %}
+
+    Tasks
+    <!-- <ol>
+        <li>
+            task1 <a href="taskdetails">(Details)</a>
+        </li>
+        <li>
+            task2 <a href="taskdetails">(Details)</a>
+        </li>
+
+        <li>
+            task3 <a href="taskdetails">(Details)</a>
+        </li>
+    </ol> -->
+    {% for i in res %}
+        {{i}}
+    {% endfor %}
+
+    <a href="addtask">Post a Task</a>
+
+{% endblock %}
