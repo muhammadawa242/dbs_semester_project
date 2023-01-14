@@ -8,7 +8,7 @@ def index(req):
         with connection.cursor() as cursor:
             # cursor.execute('declare @s int; set @s = 1;')
             # cursor.execute('set @s = 1;')
-            cursor.execute('select * from address')
+            cursor.execute('select * from pendingtasks')
             res = cursor.fetchall()
         
         return render(req, 'app/index.html', {

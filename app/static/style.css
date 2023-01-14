@@ -166,3 +166,14 @@ nav ul li a {
 nav ul li a:hover {
     color: #f9aa33; /* Change to match the hover color scheme of your theme */
 }
+
+.submit-button {
+    background-color: rgb(180, 149, 149);
+    border-radius: 25ch;
+    color: white;
+    text-indent: -0.05ch;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    opacity: 0.5;
+}

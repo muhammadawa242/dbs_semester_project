@@ -1,8 +1,12 @@
 {% extends 'app/layout.html' %}
 
 {% block body %}
-
-    Tasks
+<a  href="addtask">
+<button class="submit-button fas fa-plus fa-5x fa-fw">
+  </button>
+</a>
+   
+    {% comment %} Tasks
     <!-- <ol>
         <li>
             task1 <a href="taskdetails">(Details)</a>
@@ -19,6 +23,6 @@
         {{i}}
     {% endfor %}
 
-    <a href="addtask">Post a Task</a>
+    <a href="addtask">Post a Task</a> {% endcomment %}
 
 {% endblock %}
