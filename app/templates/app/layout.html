@@ -16,8 +16,7 @@
                 </ul>
             </nav>
         </header>        
-
-        {% load static %}
+        
         <div class="video-bg">
             <video playsinline autoplay muted loop>
                 <source src="{% static 'asd.mp4'%}" type="video/mp4">
@@ -30,9 +29,9 @@
         <footer>
             <div class="about">
                 <h3>Group Members</h3>
-                    <div>M. Afaq Ali Saqib</div>
-                    <div>M. Awais Ahmad</div>
-                    <div>Ghulam Mujtaba</div>
+                <div>M. Afaq Ali Saqib</div>
+                <div>M. Awais Ahmad</div>
+                <div>Ghulam Mujtaba</div>
                     <div>Talha Mumtaz</div>
             </div>
             <div class="contact">
@@ -41,6 +40,7 @@
                 <p>address: Jinnah Company, Rawalpindi</p>
             </div>
         </footer>
+        <script src="{% static 'js.js' %}"></script>
     </body>
     
 </html>
