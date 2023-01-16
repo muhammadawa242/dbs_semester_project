@@ -27,4 +27,17 @@ def addtask(req):
     return render(req, 'app/addtask.html')
 
 def taskdetails(req):
-    return render(req, 'app/taskdetails.html')
+    with connection.cursor() as cursor:
+        cursor.execute('select * from pendingtasks')
+        res = cursor.fetchall()
+    return render(req, 'app/taskdetails.html', {
+        'res': res
+    })
+
+def leaderboard(req):
+    with connection.cursor() as cursor:
+        cursor.execute('select * from pendingtasks')
+        res = cursor.fetchall()
+    return render(req, 'app/leaderboard.html', {
+        'res': res
+    })
